@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orhanix provides AI-powered, web-based, and app-based solutions to drive business growth with cutting-edge technology.">
+    <meta name="keywords" content="AI solutions, web development, app development, business growth, digital transformation, Orhanix">
+    <meta name="author" content="Orhanix">
+    <meta name="robots" content="index, follow">
+    <title>Orhanix</title>
+
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Orhanix</title>
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Orhanix - Driving Business Growth with Scalable Digital Solutions">
+    <meta property="og:description" content="Orhanix provides AI-powered, web-based, and app-based solutions to drive business growth with cutting-edge technology.">
+    <meta property="og:image" content="https://www.orhanix.tech/logo.png">
+    <meta property="og:url" content="https://www.orhanix.tech">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Orhanix - Driving Business Growth with Scalable Digital Solutions">
+    <meta name="twitter:description" content="Orhanix provides AI-powered, web-based, and app-based solutions to drive business growth with cutting-edge technology.">
+    <meta name="twitter:image" content="https://www.orhanix.tech/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS with your User ID
+    emailjs.init('pGReCmaA7l98lpa_N');
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Send the form data using EmailJS
+            emailjs.sendForm('service_s7mgs5a', 'template_tlv8maq', form)
+                .then(() => {
+                    alert('Message sent successfully!');
+                    form.reset(); // Clear the form
+                })
+                .catch(() => {
+                    alert('Failed to send message. Please try again.');
+                });
+        });
+    });
+    
+
+</script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Orhanix">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Partnerships">Partnerships</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1 id="head">Driving Business Growth with <br>Scalable Digital Solutions</h1>
+            <p id="tagline1">AI is at the core of everything we do.</p>
+            <a href="#form-box"><button class="button">Get in Touch</button></a>
+        </div>
+
+    </div>
+
+    <div class="container" id="services">
+        <h1>Our Services</h1>
+        <h1 id="tagline2">Transform Your Business</h1>
+        <div class="services">
+            <div class="service-item">
+                <img src="ai.jpeg" alt="Artificial Intelligence">
+                <div class="overlay"></div>
+                <div class="service-text">Artificial Intelligence</div>
+            </div>
+            <div class="service-item">
+                <img src="app-development.jpeg" alt="App Development">
+                <div class="overlay"></div>
+                <div class="service-text">App Development</div>
+            </div>
+            <div class="service-item">
+                <img src="web-development.jpeg" alt="Web Development">
+                <div class="overlay"></div>
+                <div class="service-text">Web Development</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Partnerships" id="Partnerships">
+        <h2>Community Partners</h2>
+        <p id="tagline">Our industry-leading partnerships give you access to a broader range of technologies and services.</p>
+        <div class="techierarchy">
+            <img src="techierarchy_logo.png" alt="Techierarchy Logo">
+        </div>
+        <div class="Jamiat">
+            <img src="Jamiat.png" alt="Jamiat Logo">
+        </div>
+    </div>
+    <div class="Leader">
+        <h2 class="leadership-heading">Our Leadership</h2> <!-- Added heading -->
+        <div class="leader-container"> <!-- New container for leader cards -->
+            <div class="leader-card">
+                <img src="Founder,CEO.png" alt="Founder,CEO">
+                <div class="leader-info">
+                    <p class="leader-name">Huzaifa <span class="blue-text">Rashid</span></p> <!-- Added name -->
+                    <p>Founder, CEO</p>
+                    <a href="https://www.linkedin.com/in/huzaifarashid1/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="leader-card">
+                <img src="Co_Founder.png" alt="Co_Founder">
+                <div class="leader-info">
+                    <p class="leader-name">Abdul Ahad <span class="blue-text">Sultan</span></p> <!-- Added name -->
+                    <p>Co_Founder</p>
+                    <a href="https://www.linkedin.com/in/abdul-ahad-sultan-64aa33262/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn" class="linkedin-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-box" id="form-box">
+        <h2>Ready To Get Started</h2>
+        <p>Connect with us to explore how we can deliver exceptional IT solutions for your needs.</p>
+    
+        <form>
+            <label for="firstname">First Name<span id="red">*</span></label>
+            <input type="text" id="firstname" name="firstname" required>
+    
+            <label for="lastname">Last Name<span id="red">*</span></label>
+            <input type="text" id="lastname" name="lastname" required>
+    
+            <label for="email">Email<span id="red">*</span></label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phonenumber">Phone Number<span id="red">*</span></label>
+            <input type="tel" id="phonenumber" name="phonenumber" required>
+    
+            <label for="companyname">Company Name<span id="red">*</span></label>
+            <input type="text" id="companyname" name="companyname" required>
+    
+            <label for="region">Region<span id="red">*</span></label>
+            <input type="text" id="region" name="region" required>
+    
+            <label for="projectdetails">Project Details<span id="red">*</span></label>
+            <textarea id="projectdetails" name="projectdetails" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Orhanix</h3>
+                <p>Orhanix provides AI-powered, web-based, and app-based solutions to drive business growth with
+                    cutting-edge technology.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Partnerships">Partnerships</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact" id="contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: info@orhanix.tech</p>
+                <p>Address: Lahore, Pakistan</p>
+            </div>
+            <div class="footer-section social">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/orhanix/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="https://www.facebook.com/Orhanix.inc" target="_blank" id="facebook"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/orhanixinc/?hl=en" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Orhanix. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
